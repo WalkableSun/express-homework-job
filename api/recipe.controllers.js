@@ -10,6 +10,7 @@ exports.findById = (req, res) => {
 };
 
 exports.add = function (req, res) {
+  console.log(req.body);
   Recipe.create(req.body).then(res.sendStatus(202));
 };
 

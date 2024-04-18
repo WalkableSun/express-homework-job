@@ -34,7 +34,7 @@ function addRecipe(event) {
     },
     body: JSON.stringify(recipe),
   })
-    .then((response) => response.json())
+    // .then((response) => response.json())
     .then(getRecipes);
 }
 
